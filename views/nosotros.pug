@@ -1,6 +1,28 @@
-extends  ./layout/index
+extends  ./layout/index.pug
 
 block contenido
-    p Nosotros
-    
-    img(src="img/cupon.jpg", alt="")
+    main.container.mt-5
+        .row
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="imagen sobre nosotros",class="img-fluid")
+            .col-md-7            
+                h1  #{pagina}
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper augue ac malesuada mollis. Ut vitae rutrum dui, quis posuere arcu.
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet sit amet est vitae elementum. Duis semper ac justo ullamcorper ultrices.
+                p Aliquam erat volutpat. Sed hendrerit hendrerit pellentesque. Ut et nunc a eros gravida feugiat ut et elit. Praesent sed enim at libero ornare elementum a in orci.
+
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4   
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad 
+                    p Aliquam erat volutpat. Sed hendrerit hendrerit pellentesque. Ut et nunc a eros gravida feugiat ut et elit. 
+                .col-md-4   
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad 
+                    p Aliquam erat volutpat. Sed hendrerit hendrerit pellentesque. Ut et nunc a eros gravida feugiat ut et elit. 
+                .col-md-4   
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad 
+                    p Aliquam erat volutpat. Sed hendrerit hendrerit pellentesque. Ut et nunc a eros gravida feugiat ut et elit. 
