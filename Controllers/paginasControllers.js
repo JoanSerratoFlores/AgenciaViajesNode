@@ -29,8 +29,8 @@ const paginaInicio = async (req, res) => {
 };
 
 const paginaNosotros = (req, res) => {
-  res.render("Nosotros", {
-    pagina: "Nosotros",
+  res.render("nosotros", {
+    pagina: "nosotros",
   });
 };
 
@@ -40,7 +40,7 @@ const paginaViajes = async (req, res) => {
 
   console.log(viajes);
 
-  res.render("Viajes", {
+  res.render("viajes", {
     pagina: "Próximos Viajes",
     viajes,
   });
@@ -49,8 +49,8 @@ const paginaViajes = async (req, res) => {
 const paginaTestimoniales = async (req, res) => {
   try {
     const testimoniales = await Testimonial.findAll();
-    res.render("Testimoniales", {
-      pagina: "Testimoniales",
+    res.render("testimoniales", {
+      pagina: "testimoniales",
       testimoniales
     });
   } catch (error) {
